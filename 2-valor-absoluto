@@ -1,0 +1,17 @@
+2
+#include <stdio.h>
+
+int main() {
+    int num ; // long long num pode ser usado para grandes numeros
+
+    printf("Informe o número desejado: ");
+    scanf("%d", &num);
+
+    if( num < 0) {
+         num = num * -1;   
+    }
+        printf("Valor absoluto: %d\n ", num);
+    
+
+    return 0;
+}
