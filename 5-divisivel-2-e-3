@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+
+int main() {
+   int num;
+
+    printf("Informe o número desejado: ");
+    scanf("%d", &num);
+
+    if( num % 2 && num % 3) {
+        printf("O número é divisível por 2 e 3. ");
+    }else {
+        printf("O número não é divisível por 2 e 3. ");
+    }
+    return 0;
+}
