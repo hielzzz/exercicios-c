@@ -1,0 +1,24 @@
+3
+#include <stdio.h>
+
+int main() {
+    float altura, peso;
+    char genero;
+
+    printf("Informe sua altura: ");
+    scanf("%f", &altura);
+
+    printf("Informe seu genero: ");
+    scanf(" %c", &genero);
+
+    if(genero == 'm' || genero == 'M') {
+        peso = 72.7 * altura - 58;
+    }else if(genero == 'F' || genero == 'F'){
+        peso = 62.1 * altura - 44.7;
+    }else{
+        printf("Genero inválido.\n");
+    }
+        printf("Seu peso ideal é: %2f kg\n ", peso);
+    
+    return 0;
+}
